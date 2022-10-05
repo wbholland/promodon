@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Promodon",
+  "version": "1.0",
+
+  "description": "Automatically turns on \"Pro Mode\" for the Washington Post weekly mini meta crosswords.",
+
+  "icons": {
+    "48": "promodon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.amuselabs.com/minimeta/crossword?*"],
+      "all_frames": true,
+      "js": ["promodon.js"]
+    }
+  ]
+
+}
+
